@@ -17,8 +17,9 @@ if(isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password
 }
 
 // username and email available
-isUsernameAvailable();
-isEmailAvailable();
+// isUsernameAvailable();
+// isEmailAvailable();
 
+include 'view/_header.php';
 include 'view/register.php';
 include 'view/_footer.php';
