@@ -1,0 +1,36 @@
+[1mdiff --git a/config/config-sample.php b/config/config-sample.php[m
+[1mdeleted file mode 100755[m
+[1mindex 5d62b74..0000000[m
+[1m--- a/config/config-sample.php[m
+[1m+++ /dev/null[m
+[36m@@ -1,16 +0,0 @@[m
+[31m-<?php[m
+[31m-[m
+[31m-$host = 'localhost';[m
+[31m-$dbname = 'IIM_Git_SoundCloud';[m
+[31m-$user = 'username';[m
+[31m-$pass = 'password';[m
+[31m-[m
+[31m-[m
+[31m-try{[m
+[31m-	$db = new PDO('mysql:host='.$host.';dbname='.$dbname, $user, $pass, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));[m
+[31m-}[m
+[31m-catch(Exception $e)[m
+[31m-{[m
+[31m-	echo 'Erreur : '.$e->getMessage().'<br />';[m
+[31m-	echo 'N° : '.$e->getCode();[m
+[31m-}[m
+\ No newline at end of file[m
+[1mdiff --git a/view/login.php b/view/login.php[m
+[1mindex 5bcbf19..74df32e 100755[m
+[1m--- a/view/login.php[m
+[1m+++ b/view/login.php[m
+[36m@@ -21,7 +21,7 @@[m
+ 						</span>[m
+ 					</div>[m
+ 					<div class="form-submit">[m
+[31m-						<input type="submit" value="Connecter">	[m
+[32m+[m						[32m<input type="submit" name="connecter" value="Connecter">[m[41m	[m
+ 					</div>[m
+ 					<p class="account">Vous n'avez pas de compte ? <a href="register.php">Inscrivez vous !</a></p>[m
+ 				</form>[m
