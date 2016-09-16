@@ -24,18 +24,12 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 		}else{
 			$error = 'Mauvais identifiant';
 		}
-
-		
-		
-
-		
 			
-	}else{
+		}else{
 
 		$error = 'Champs requis !';
 
-	}
-
+		}
 }
 
 /******************************** 
